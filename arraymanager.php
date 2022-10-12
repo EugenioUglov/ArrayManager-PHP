@@ -11,8 +11,8 @@ class ArrayManager {
             if ($value_to_check === $value) {
                 return true;
             }
-
-            return false;
         }
+
+        return false;
     }
 }
