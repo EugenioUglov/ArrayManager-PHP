@@ -8,18 +8,17 @@ Each function has been created with one parameter as an object. Inside funcitons
 Include file:
 
 ```
-require_once('stringmanager.php');
+require_once('arraymanager.php');
 ```
 
 Create object:
 ```
-$string_manager = new StringManager();
+$array_manager = new ArrayManager();
 ```
 
 Use:
 ```
-$replaced_string = $string_manager->get_replaced_string((object)array(
-  'string_subject' => 'string to replace', 
-  'string_to_search' => 'to replace', 
-  'string_to_replace_searched' => 'has been replaced'));
+$is_exist_one = $array_manager->is_exist_in_array((object)array(
+  'value_to_check' => 'one', 
+  'input_array' => array('one', 'two','ten')));
 ```
